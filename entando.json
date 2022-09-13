@@ -1,0 +1,53 @@
+{
+    "microservices": [
+        {
+            "name": "strapi-config-ms",
+            "stack": "spring-boot",
+            "healthCheckPath": "/actuator/health",
+            "dbms": "postgresql",
+            "ingressPath": "/entando-strapi-config-api/api/",
+            "commands": {
+                "run": "mvn -Dspring-boot.run.arguments=\"--server.port=8081\" spring-boot:run"
+            },
+            "roles": [
+                "et-first-role",
+                "et-second-role"
+            ]
+        }
+    ],
+    "microfrontends": [
+        {
+            "name": "strapi-config-app",
+            "customElement": "strapi-config-app",
+            "stack": "react",
+            "type": "app-builder",
+            "group": "free",
+            "nav": [
+                {
+                    "label": {
+                        "en": "Strapi config app",
+                        "it": "Strapi config app"
+                    },
+                    "target": "internal",
+                    "url": "/strapi-config-app"
+                }
+            ],
+            "slot": "content",
+            "paths": [
+                "/strapi-config-app"
+            ],
+            "apiClaims": [
+                {
+                    "name": "int-api",
+                    "type": "internal",
+                    "serviceName": "strapi-config-ms"
+                }
+            ]
+        }
+    ],
+    "svc": ["keycloak"],
+    "name": "entando-strapi-config-oci",
+    "version": "0.0.1",
+    "description": "entando-strapi-config-oci description",
+    "type": "bundle"
+}
