@@ -5,7 +5,7 @@ package com.entando.apiconfig.config;
  */
 public final class ApplicationConstants {
 
-	public static final String ADMIN = "et-first-role";
+	public static final String ADMIN = "admin";
     public static final String AUTHOR = "author";
     public static final String MANAGER = "manager";
     public static final String APPLICATION_NAME = "STRAPI";

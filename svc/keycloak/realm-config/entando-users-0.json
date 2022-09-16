@@ -3,7 +3,7 @@
   "users" : [ {
     "id" : "af32f4ab-0ee4-4cbb-bfef-4a7fdc0f52d4",
     "createdTimestamp" : 1636652043300,
-    "username" : "et-first-role",
+    "username" : "admin",
     "enabled" : true,
     "totp" : false,
     "emailVerified" : false,
@@ -23,7 +23,7 @@
     "requiredActions" : [ ],
     "realmRoles" : [ "offline_access", "uma_authorization" ],
     "clientRoles" : {
-      "internal" : [ "et-first-role" ],
+      "internal" : [ "admin" ],
       "account" : [ "manage-account", "view-profile" ]
     },
     "notBefore" : 0,

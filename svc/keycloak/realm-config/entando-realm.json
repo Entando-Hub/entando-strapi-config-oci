@@ -57,7 +57,7 @@
     "client" : {
       "internal" : [ {
         "id" : "0c636069-7a2c-499b-84b4-30cb712ad640",
-        "name" : "et-first-role",
+        "name" : "admin",
         "composite" : false,
         "clientRole" : true,
         "containerId" : "c04ffc7b-48c6-4950-a88a-05fd8cc83dbc",

@@ -10,8 +10,7 @@
                 "run": "mvn -Dspring-boot.run.arguments=\"--server.port=8081\" spring-boot:run"
             },
             "roles": [
-                "et-first-role",
-                "et-second-role"
+               "admin"
             ]
         }
     ],
@@ -45,9 +44,11 @@
             ]
         }
     ],
-    "svc": ["keycloak"],
+    "svc": [
+        "keycloak"
+    ],
     "name": "entando-strapi-config-oci",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "entando-strapi-config-oci description",
     "type": "bundle"
 }
