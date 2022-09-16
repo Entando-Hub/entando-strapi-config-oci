@@ -1,7 +1,7 @@
 {
     "microservices": [
         {
-            "name": "strapi-config-ms",
+            "name": "entando-strapi-config-plugin",
             "stack": "spring-boot",
             "healthCheckPath": "/actuator/health",
             "dbms": "postgresql",
@@ -40,7 +40,7 @@
                 {
                     "name": "int-api",
                     "type": "internal",
-                    "serviceName": "strapi-config-ms"
+                    "serviceName": "entando-strapi-config-plugin"
                 }
             ]
         }
